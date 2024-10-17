@@ -9,6 +9,8 @@ import PricingPlans from '@/components/PricingPlans'
 import Contact from '@/components/Contact'
 import Questions from '@/components/Questions'
 import Navbar from '@/components/Navbar'
+import Toggle from '@/components/sub/Toggle'
+import Load from '@/components/sub/Load'
 import { useState, useRef, useEffect } from 'react'
 
 export default function Home() {
@@ -35,18 +37,21 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Navbar id={id} />
-      <div ref={compsRef}>
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Reviews />
-        <Projects />
-        <PricingPlans />
-        <Contact />
-        <Questions />
-      </div>
+      <Load />
+      <Toggle>
+        <Navbar id={id} />
+        <div className="w-min" ref={compsRef}>
+          <Hero />
+          <About />
+          <Experience />
+          <Skills />
+          <Reviews />
+          <Projects />
+          <PricingPlans />
+          <Contact />
+          <Questions />
+        </div>
+      </Toggle>
     </>
   )
 }

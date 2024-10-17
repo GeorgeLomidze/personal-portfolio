@@ -7,7 +7,7 @@ import { aboutData, aboutText, downloadIcon, arrowLeftIcon } from '@/assets'
 
 const About = () => {
   return (
-    <div id="about" className="min-h-screen px-96 flex flex-col items-center justify-center">
+    <div id="about" className="min-h-screen flex flex-col items-center justify-center">
       <Heading text={'About Me'} />
       <div className="w-full flex items-center justify-between md:justify-center">
         <Image
@@ -17,11 +17,11 @@ const About = () => {
           height={400}
           className="w-[300px] lg:w-[200px] md:hidden"
         />
-        <div className="relative max-w-[800px] rounded-xl bg-zinc-100 p-5 text-justify">
-          <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 md:hidden">
+        <div className="relative max-w-[800px] rounded-xl bg-zinc-100 p-5 text-justify dark:bg-zinc-700 transition-colors">
+          <span className="absolute -left-5 top-20 scale-[2.5] text-zinc-100 md:hidden dark:text-zinc-700 transition-colors">
             {arrowLeftIcon}
           </span>
-          <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
+          <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px] dark:text-white">
             {aboutText}
           </p>
           <a

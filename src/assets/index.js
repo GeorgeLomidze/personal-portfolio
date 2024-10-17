@@ -5,6 +5,7 @@ import DribbbleLineIcon from 'remixicon-react/DribbbleLineIcon'
 import YoutubeLineIcon from 'remixicon-react/YoutubeLineIcon'
 import GithubLineIcon from 'remixicon-react/GithubLineIcon'
 
+/* eslint-disable react/jsx-key */
 export const heroIcons = [
   <InstagramLineIcon />,
   <FacebookCircleLineIcon />,
@@ -186,6 +187,7 @@ import StarHalfLineIcon from 'remixicon-react/StarHalfLineIcon'
 import ArrowLeftSLineIcon from 'remixicon-react/ArrowLeftSLineIcon'
 import ArrowRightSLineIcon from 'remixicon-react/ArrowRightSLineIcon'
 
+/* eslint-disable react/jsx-key */
 export const starIcons = [<StarFillIcon />, <StarHalfLineIcon />]
 export const arrowIcons = [<ArrowLeftSLineIcon />, <ArrowRightSLineIcon />]
 
